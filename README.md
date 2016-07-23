@@ -10,7 +10,6 @@ Based on mrt:google-contacts (can't find repo, search mrt:google-contacts on atm
   
 ```javascript
 opts =
-  email: userEmail
   consumerKey: yahooId
   consumerSecret: yahooSecret
   token: yahooAccessToken
