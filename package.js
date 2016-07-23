@@ -1,6 +1,6 @@
 Package.describe({
   name: 'rjgb:yahoo-contacts',
-  version: '0.0.1',
+  version: '1.0.0',
   summary: 'Yahoo Contacts package',
   git: '',
   documentation: 'README.md'
