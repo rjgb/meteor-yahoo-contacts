@@ -66,8 +66,6 @@ YahooContacts.prototype._get = function (params, cb) {
         return cb(error);
       }
       try {
-        console.log(data);
-
         data = JSON.parse(data);
         cb(null, data);
       }
@@ -201,7 +199,7 @@ YahooContacts.prototype._saveContactsFromFeed = function (contacts) {
             photoUrl = field.value.imageUrl;
             mimeType = 'image/*';
             if (field.value.imageSource == 'google') {
-              photoUrl += 'https://us-mg5.mail.yahoo.com/yab-fe/smartcontacts-fe/contact/1/photo?imgUrl=' + photoUrl;
+              photoUrl = 'https://us-mg5.mail.yahoo.com/yab-fe/smartcontacts-fe/contact/1/photo?imgUrl=' + photoUrl;
             }
           }
         }
